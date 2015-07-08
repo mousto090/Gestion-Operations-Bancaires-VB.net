@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DC1B272-D934-43A6-B6A6-1BA8222D6E76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>VBMINIPROJETBANQUE.My.MyApplication</StartupObject>
+    <RootNamespace>VBMINIPROJETBANQUE</RootNamespace>
+    <AssemblyName>VBMINIPROJETBANQUE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VBMINIPROJETBANQUE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VBMINIPROJETBANQUE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accueil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil.Designer.vb">
+      <DependentUpon>Accueil.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agent.Designer.vb">
+      <DependentUpon>Agent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="annuler.Designer.vb">
+      <DependentUpon>annuler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="annuler.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="authentification.Designer.vb">
+      <DependentUpon>authentification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="authentification.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="consultation.Designer.vb">
+      <DependentUpon>consultation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="consultation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="declaration.vb" />
+    <Compile Include="depot.Designer.vb">
+      <DependentUpon>depot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="depot.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Directeur.Designer.vb">
+      <DependentUpon>Directeur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Directeur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="montant.Designer.vb">
+      <DependentUpon>montant.vb</DependentUpon>
+    </Compile>
+    <Compile Include="montant.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="operation.Designer.vb">
+      <DependentUpon>operation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="operation.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="retrait.Designer.vb">
+      <DependentUpon>retrait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="retrait.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="solde.Designer.vb">
+      <DependentUpon>solde.vb</DependentUpon>
+    </Compile>
+    <Compile Include="solde.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="virement.Designer.vb">
+      <DependentUpon>virement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="virement.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agent.resx">
+      <DependentUpon>Agent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="annuler.resx">
+      <DependentUpon>annuler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="authentification.resx">
+      <DependentUpon>authentification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultation.resx">
+      <DependentUpon>consultation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="depot.resx">
+      <DependentUpon>depot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Directeur.resx">
+      <DependentUpon>Directeur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="montant.resx">
+      <DependentUpon>montant.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="operation.resx">
+      <DependentUpon>operation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="retrait.resx">
+      <DependentUpon>retrait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="solde.resx">
+      <DependentUpon>solde.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="virement.resx">
+      <DependentUpon>virement.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bcg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carteguichet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logott.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logottt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercard-visa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zgqw9yK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erreuri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bouton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clavier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dPhIB12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billets-distributeur-automatique-dab-attaque-fourgon_740541.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valider.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\retour.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CliETR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CliREc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LisCli.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
